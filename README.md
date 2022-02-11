@@ -121,11 +121,11 @@ const myUsers = [
  որը կունենա հետևյալ տեսքը ՝
    
 ```js story 
-	usersByLikes = {
-		shark: 'ocean',
-		turtle: 'pond',
-		otter: 'fish biscuits'
-	} 
+	usersByLikes = [
+		{shark: 'ocean'},
+		{turtle: 'pond'},
+		{otter: 'fish biscuits}'
+	]
  
 ```
 
