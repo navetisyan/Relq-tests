@@ -66,6 +66,7 @@ solution(people) = [-1, 150, 160, 170, -1, -1, 180, 190]
 ## 5
 Ինչ կտպի այս կոդը՞: Ինչն է այստեղ բաց թողնված՞, Ֆիքսեք այն:
 
+```js story
 var promise = new Promise(function() {
     setTimeout(function() {
         resolve('hello world');
@@ -83,3 +84,4 @@ promise.then(function(data) {
 promise.then(function(data) {
     console.log(data + ' 3');
 });
+```
