@@ -49,7 +49,10 @@ console.log(tom.getName()); //տպում է '' - դատարկ string
 
 ```
 
-## 4
+## 4 
+Ինչպես՞ է new Classname()ը աշխատում: գրեք հերթական քայլերը: ինչ է իրենից  ներկայացնում __proto__-ն, ինչ տարբերություն prototype-ի հետ՞
+
+## 5
 Մարդիկ կանգնած են այգում շարքով, նրանց արանքում կան ծառեր, որոնք հնարավոր չի տեղաշարժել:
 Ձեր խնդիրն է սորտավորել մարդկանց ըստ իրենց բոյերի աճման կարգով առանց տեղաշարժելու ծառերը: 
 Մեզ տրված է զանգվածը, որտեղ նշված են մարդկանց հասակները, իսկ ծառերի փոխարեն նշված է '-1': 
@@ -63,7 +66,7 @@ solution(people) = [-1, 150, 160, 170, -1, -1, 180, 190]
 
 ```
 
-## 5
+## 6
 Ինչ կտպի այս կոդը՞: Ինչն է այստեղ բաց թողնված՞, Ֆիքսեք այն:
 
 ```js story
@@ -84,4 +87,30 @@ promise.then(function(data) {
 promise.then(function(data) {
     console.log(data + ' 3');
 });
+```
+
+## 7 
+Ունենք 2 API request-ներ, ամեն մեկը տևում է ենթադրենք 2 վայրկյան: Այս դեպքում այս 2 requestները իրար հետևից կանչելով 2ի աշխատանքը կտևի 4 վայրկյան:
+Ինչպես կարող ենք փոփոխել կոդը, որ 2ի պատասխանը միասին ստանանք 2 վայրկյան հետո: Գրեք փոփոխած կոդը
+
+``` js story
+
+fetch(`https://restcountries.com/v2/name/armenia`)
+  .then((response) => {
+    if (!response.ok) throw new Error(`Country not found (${response.status})`);
+    return response.json();
+  })
+  .then((data) => {
+    console.log("Armenia: data=", data);
+  });
+
+fetch(`https://restcountries.com/v2/name/australia`)
+  .then((response) => {
+    if (!response.ok) throw new Error(`Country not found (${response.status})`);
+    return response.json();
+  })
+  .then((data) => {
+    console.log("Australia: data=", data);
+  });
+
 ```
