@@ -48,6 +48,8 @@ user.sayHi();
 ## 3
 Այս օբյեկտի մեջ ավելացրեք getAge մեթոդ, որը կտպի userի տարիքը.
 
+```js story
+
 let user = {
   name: "John",
   age: 30,
@@ -56,3 +58,13 @@ let user = {
     alert(this.name);
   }
 };
+
+```
+
+## 4 
+Գրել ucFirst(str) ֆունկցիա, որը կվերադարձնի stringը առաջին տառը մեծատառ դարձրած: Օրինակ
+
+```js story
+const result = ucFirst('john');
+ console.log(result) // կտպի "John"
+```
