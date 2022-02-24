@@ -67,58 +67,12 @@ solution(people) = [-1, 150, 160, 170, -1, -1, 180, 190]
 ```
 
 ## 6
-Ինչ կտպի այս կոդը՞: Ինչն է այստեղ բաց թողնված՞, Ֆիքսեք այն:
-
-```js story
-var promise = new Promise(function() {
-    setTimeout(function() {
-        resolve('hello world');
-    }, 2000);
-});
-
-promise.then(function(data) {
-    console.log(data + ' 1');
-});
-
-promise.then(function(data) {
-    console.log(data + ' 2');
-});
-
-promise.then(function(data) {
-    console.log(data + ' 3');
-});
-```
-
-## 7 
-Ունենք 2 API request-ներ, ամեն մեկը տևում է ենթադրենք 2 վայրկյան: Այս դեպքում այս 2 requestները իրար հետևից կանչելով 2ի աշխատանքը կտևի 4 վայրկյան:
-Ինչպես կարող ենք փոփոխել կոդը, որ 2ի պատասխանը միասին ստանանք 2 վայրկյան հետո: Գրեք փոփոխած կոդը
-
-``` js story
-
-fetch(`https://restcountries.com/v2/name/armenia`)
-  .then((response) => {
-    if (!response.ok) throw new Error(`Country not found (${response.status})`);
-    return response.json();
-  })
-  .then((data) => {
-    console.log("Armenia: data=", data);
-  });
-
-fetch(`https://restcountries.com/v2/name/australia`)
-  .then((response) => {
-    if (!response.ok) throw new Error(`Country not found (${response.status})`);
-    return response.json();
-  })
-  .then((data) => {
-    console.log("Australia: data=", data);
-  });
-
-```
-
-## 8
 Տրված է PersonCl classը: 
 1. Ստեղծեք PersonCl-ի instance
 2. Ինչ տարբերություն greet և het ֆունկցիաների միջև:
+
+```js story
+
 class PersonCl {
   constructor(fullName, birthYear) {
     this.fullName = fullName;
@@ -142,7 +96,32 @@ class PersonCl {
   }
 }
 
-## 9 
+````
+
+## 7
+Ինչ կտպի այս կոդը՞: Ինչն է այստեղ բաց թողնված՞, Ֆիքսեք այն:
+
+```js story
+var promise = new Promise(function() {
+    setTimeout(function() {
+        resolve('hello world');
+    }, 2000);
+});
+
+promise.then(function(data) {
+    console.log(data + ' 1');
+});
+
+promise.then(function(data) {
+    console.log(data + ' 2');
+});
+
+promise.then(function(data) {
+    console.log(data + ' 3');
+});
+```
+
+## 8
 
 ``` js story
 
@@ -177,5 +156,31 @@ promise
 .then(function() {
     console.log('Success 4');
 });
+
+```
+
+## 9
+Ունենք 2 API request-ներ, ամեն մեկը տևում է ենթադրենք 2 վայրկյան: Այս դեպքում այս 2 requestները իրար հետևից կանչելով 2ի աշխատանքը կտևի 4 վայրկյան:
+Ինչպես կարող ենք փոփոխել կոդը, որ 2ի պատասխանը միասին ստանանք 2 վայրկյան հետո: Գրեք փոփոխած կոդը
+
+``` js story
+
+fetch(`https://restcountries.com/v2/name/armenia`)
+  .then((response) => {
+    if (!response.ok) throw new Error(`Country not found (${response.status})`);
+    return response.json();
+  })
+  .then((data) => {
+    console.log("Armenia: data=", data);
+  });
+
+fetch(`https://restcountries.com/v2/name/australia`)
+  .then((response) => {
+    if (!response.ok) throw new Error(`Country not found (${response.status})`);
+    return response.json();
+  })
+  .then((data) => {
+    console.log("Australia: data=", data);
+  });
 
 ```
