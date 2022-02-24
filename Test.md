@@ -32,3 +32,19 @@ let list = {
 };
 
 ```
+
+## 3. 
+Այս կոդը չի տպում tom-ի անունը: Կարող եք բացատրել թե ինչու և ինչպես ֆիքսենք այն՞
+
+```js story
+
+function Person(name) {
+  this.name = name;
+}
+Person.prototype.getName = () => {
+  return this.name;
+};
+const tom = new Person('Tom');
+console.log(tom.getName()); //տպում է '' - դատարկ string
+
+```
