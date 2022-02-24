@@ -143,6 +143,9 @@ class PersonCl {
 }
 
 ## 9 
+
+``` js story
+
 Ինչ կտպի այս կոդը և ինչու 
 
 function job() {
@@ -174,3 +177,5 @@ promise
 .then(function() {
     console.log('Success 4');
 });
+
+```
