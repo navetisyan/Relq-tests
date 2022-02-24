@@ -34,7 +34,7 @@ let list = {
 ```
 
 ## 3. 
-Այս կոդը չի տպում tom-ի անունը: Կարող եք բացատրել թե ինչու և ինչպես ֆիքսենք այն՞
+Այս կոդը չի տպում tom-ի անունը: Կարող եք բացատրել թե ինչու և ինչպե՞ս ֆիքսենք այն
 
 ```js story
 
@@ -79,17 +79,10 @@ class PersonCl {
     this.birthYear = birthYear;
   }
 
-  // Instance methods
-  // Methods will be added to .prototype property
-  calcAge() {
-    console.log(2037 - this.birthYear);
-  }
-
   greet() {
     console.log(`Hey ${this.fullName}`);
   }
 
-  // Static method
   static hey() {
     console.log("Hey there 👋");
     console.log(this);
@@ -99,7 +92,7 @@ class PersonCl {
 ````
 
 ## 7
-Ինչ կտպի այս կոդը՞: Ինչն է այստեղ բաց թողնված՞, Ֆիքսեք այն:
+Ինչ կտպի այս կոդը՞: Ին՞չն է այստեղ բաց թողնված, Ֆիքսեք այն:
 
 ```js story
 var promise = new Promise(function() {
