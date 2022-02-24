@@ -1,0 +1,8 @@
+# Relq-tests
+##### Second Exam for February
+
+## 1. 
+apahovel functionality, vor karoghananq
+
+let longText = "any text goes here";
+longText.getFirstWord();
