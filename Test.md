@@ -115,4 +115,29 @@ fetch(`https://restcountries.com/v2/name/australia`)
 
 ```
 
+## 8
+Տրված է PersonCl classը: 
+1. Ստեղծեք PersonCl-ի instance
+2. Ինչ տարբերություն greet և het ֆունկցիաների միջև:
+class PersonCl {
+  constructor(fullName, birthYear) {
+    this.fullName = fullName;
+    this.birthYear = birthYear;
+  }
 
+  // Instance methods
+  // Methods will be added to .prototype property
+  calcAge() {
+    console.log(2037 - this.birthYear);
+  }
+
+  greet() {
+    console.log(`Hey ${this.fullName}`);
+  }
+
+  // Static method
+  static hey() {
+    console.log("Hey there 👋");
+    console.log(this);
+  }
+}
