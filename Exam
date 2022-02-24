@@ -1,0 +1,4 @@
+//apahovel functionality, vor karoghananq
+
+let longText = "any text goes here";
+longText.getFirstWord();
