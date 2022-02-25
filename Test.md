@@ -69,7 +69,7 @@ solution(people) = [-1, 150, 160, 170, -1, -1, 180, 190]
 ## 6
 Տրված է PersonCl classը: 
 1. Ստեղծեք PersonCl-ի instance
-2. Ինչ տարբերություն greet և het ֆունկցիաների միջև:
+2. Ինչ տարբերություն greet և hey ֆունկցիաների միջև:
 
 ```js story
 
