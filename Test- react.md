@@ -123,10 +123,10 @@ React.js-ում life-cycleը ունի հետևյալ ֆազաները ՝ (life-c
 
 Այս life-cycle մեթոդներից որը որ ֆազայում է կանչվում.
 
-componentWillUnmount
-componentDidMount
-componentDidUpdate
-constructor
+componentWillUnmount, 
+componentDidMount, 
+componentDidUpdate, 
+constructor, 
 Render
 
 Կարող եք ներկայացնել գծագրի տեսքով
