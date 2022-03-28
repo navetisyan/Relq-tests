@@ -38,6 +38,24 @@ console.log(wrappedMultiply(numbers));
 console.log(wrappedSummarize(numbers));
 ```
 
+## 2. 
+Ինչ է Imperative(հրամայական) և declarative(նկարագրողական) programmingը. 
+
+```js-story
+//version 1
+let name = "Alonzo";
+let greeting = "Hi";
+console.log(`${greeting}, ${name}!`);
+
+//version 2
+function greet(greeting, name){
+ return `${greeting}, ${name}!`;
+};
+greet("Hi", "Alonzo");
+```
+Ո՞ր տիպին է պատկանում reactը.
+
+
 1. Որն է library-ի և framework-ի տարբերությունը և որ տեսակին է պատկանում React-ը։
 2․ Ինչ կոմպոնենտների տեսակներ գիտեք React-ում։
 3․ Ինչ դերակատարում ունի render մեթդը React-ում։
