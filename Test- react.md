@@ -2,8 +2,9 @@
 #### React 
 
 ## 1. 
-####Any function that takes in a function or returns one out is a higher-order function.
-Այն ֆունկցիան, որը որպես պարամետր ստանում է ֆունկցիա, կամ վերադարձնում է ֆունկցիա, կոչվում է higher-order function. իսկ մյուս ֆունկցիաները - first class ֆունկցիաներ
+#### Any function that takes in a function or returns one out is a higher-order function.
+Այն ֆունկցիան, որը որպես պարամետր ստանում է ֆունկցիա, կամ վերադարձնում է ֆունկցիա, կոչվում է higher-order function:
+Իսկ մյուս ֆունկցիաները - first class ֆունկցիաներ:
 Ուսումնասիրեք կոդի օրինակը, որտեղ multiply և summarize-ը first-class ֆունկցիաներ են, իսկ describingFuncը higher-order function։ 
 Գրեք մեկ այլ higher-order function, որի անունը կլինի - withoutNegatives , այդ ֆունկցիան կվերադարձնի մուտքագրված ֆունկցիան, բայց արգումենտներից ֆիլտրած բացասական թվերը.
 
