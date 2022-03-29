@@ -154,8 +154,9 @@ function Counter() {
 ինչ է թույլ տալիս useEffect-ը
 
 ```js-story
-> test
-> test2
+> Perform side-effects inside a function components
+> Accept a context object and return the current context value for that context object
+> Return a statefull value and a function
 ```
 
 11. (Պատկերացրեք Ձեր app-ում կան side effect-ներ(կողմնակի էֆֆեկտներ), որ hook-ը կօգտագործեք այն իմպլեմենտելու համար։ Ներքում նշեք մեկական պրակտիկ օրինակ։) Օրինակում ունենք ռեքուստ արած դատա "https://restcountries.com/v3.1/all": Ռեքուստ արած դատան պահել hook-ի մեջ countryData անունով, օգտագործելով side effect-ների համար ստեղծված հուկը իմպլեմենտել fetch արած դատան։
