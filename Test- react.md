@@ -159,7 +159,12 @@ function Counter() {
 > Return a statefull value and a function
 ```
 
-11. (Պատկերացրեք Ձեր app-ում կան side effect-ներ(կողմնակի էֆֆեկտներ), որ hook-ը կօգտագործեք այն իմպլեմենտելու համար։ Ներքում նշեք մեկական պրակտիկ օրինակ։) Օրինակում ունենք ռեքուստ արած դատա "https://restcountries.com/v3.1/all": Ռեքուստ արած դատան պահել hook-ի մեջ countryData անունով, օգտագործելով side effect-ների համար ստեղծված հուկը իմպլեմենտել fetch արած դատան։
+## 11.
+Պատկերացրեք Ձեր app-ում կան side effect-ներ(կողմնակի էֆֆեկտներ), որ hook-ը կօգտագործեք այն իմպլեմենտելու համար։
+Օրինակում ունենք ռեքուստ արած դատա "https://restcountries.com/v3.1/all": Ռեքուստ արած դատան պահել hook-ի մեջ countryData անունով:
+Օգտագործելով side effect-ների համար ստեղծված հուկը գրել դատան fetch անելու ֆունկցիոնալը.
+
+```js-story
 import React from "react";
 import "./App.css";
 
@@ -175,8 +180,15 @@ function App() {
     </div>
   );
 }
-12․ Ինչ նպատակով է օգտագործվում ref-ը React-ում, և օրինակում էջը բացելիս օգտագործելով ref-ը focus տեղադրեք input թեգի վրա։
+
+```
+
+## 12.
+
+Ինչ նպատակով է օգտագործվում ref-ը React-ում, և օրինակում էջը բացելիս օգտագործելով ref-ը focus տեղադրեք input թեգի վրա։
 import React from "react";
+
+```js-story
 const InputModal = ({ initialValue, onSubmit, onClose }) => {
   return (
     <div className="modal--overlay">
@@ -188,6 +200,10 @@ const InputModal = ({ initialValue, onSubmit, onClose }) => {
   );
 };
 export default InputModal;
+
+```
+
+
 13. Ինչու մենք դատան չենք պահում սովորական փոփոխականի մեջ այլ hook-ի մեջ ենք պահում։
 14․ Ծնողից մի քանի մակարդակ ներքև ինչպես կարող ենք դատա փոխանցել, առանց props-ի (hook-ի միջոցով)։
 15․ Ինչ է իրենից ներկայացնում Virtual Dom-ը։
