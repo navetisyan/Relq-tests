@@ -152,9 +152,10 @@ function Counter() {
 
 ## 10.
 ինչ է թույլ տալիս useEffect-ը
-```html
-<paper-radio-button></paper-radio-button>
-<paper-radio-button>Item label</paper-radio-button>
+
+```js-story
+> test
+> test2
 ```
 
 11. (Պատկերացրեք Ձեր app-ում կան side effect-ներ(կողմնակի էֆֆեկտներ), որ hook-ը կօգտագործեք այն իմպլեմենտելու համար։ Ներքում նշեք մեկական պրակտիկ օրինակ։) Օրինակում ունենք ռեքուստ արած դատա "https://restcountries.com/v3.1/all": Ռեքուստ արած դատան պահել hook-ի մեջ countryData անունով, օգտագործելով side effect-ների համար ստեղծված հուկը իմպլեմենտել fetch արած դատան։
