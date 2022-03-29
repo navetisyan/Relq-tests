@@ -202,15 +202,3 @@ const InputModal = ({ initialValue, onSubmit, onClose }) => {
 export default InputModal;
 
 ```
-
-
-13. Ինչու մենք դատան չենք պահում սովորական փոփոխականի մեջ այլ hook-ի մեջ ենք պահում։
-14․ Ծնողից մի քանի մակարդակ ներքև ինչպես կարող ենք դատա փոխանցել, առանց props-ի (hook-ի միջոցով)։
-15․ Ինչ է իրենից ներկայացնում Virtual Dom-ը։
-16․ Տրված է const names = ["Tigran", "Pap", "Artashes", "Artavazd"] data-ն, սա ինչպես կպատկերեք React-ում համարակալված և իրար հաջորդական (Հաշվի առնել, որ դատան կարող է լինել 1000 հատ անուն, ուստի պետք է գրել դինամիկ կոդ, օգտագործելով array մեթոդ)։
-17․ Ինչու ենք key-ը օգտագործում React-ում list-երի ժամանակ։
-18․ Ներքևում նշված օրինակում ինչու է օգտագործվում ․․․ կետերը։
-<Modal {...this.props} title='Modal heading' animation={false}>
-
-19․ Ներքևում նշված կոդում ինչու է օգտագործվում ․․․ կետերը։
-this.setState(prevState => { return {foo: {...prevState.foo, a: "updated"}}; })
