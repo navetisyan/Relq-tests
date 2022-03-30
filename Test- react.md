@@ -117,17 +117,8 @@ export default Parent;
 ```
 
 ## 8. 
-React.js-ում life-cycleը ունի հետևյալ ֆազաները ՝ (life-cycle phases ) 
+React.js-ում որոնք են life-cycleի ֆազաները ՝ (life-cycle phases ) և մեթոդները
 
-#### Mounting, updating, unmounting
-
-Այս life-cycle մեթոդներից որը որ ֆազայում է կանչվում.
-
-componentWillUnmount, 
-componentDidMount, 
-componentDidUpdate, 
-constructor, 
-Render
 
 Կարող եք ներկայացնել գծագրի տեսքով
 
